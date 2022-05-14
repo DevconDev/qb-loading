@@ -12,7 +12,7 @@
     </head>
     <!-- This is where you want to replace with your audio -->
 
-    <audio autoplay loop id="audio" src="/assets/audio/noncopyright.mp3"></audio>
+    <audio autoplay loop id="audio" src="/assets/audio/newintro.mp3"></audio>
 
     <body>
         <div id="loading-main" style="min-height: auto;">
@@ -36,44 +36,11 @@
                 </template>
             </q-parallax>
             -->
-
+<!--
             <div class="absolute-top q-pa-xl">
                 <q-card flat style="width: auto; background: transparent;">
                     <q-card-section class="row items-center no-wrap">
-                        <q-carousel animated infinite :autoplay="secondap" v-model="secondslide" transition-next="fade" transition-prev="fade" class="bg-transparent text-white">
-                            <q-carousel-slide name="1" class="column no-wrap flex-center">
-                                <div style="width: 30vw; white-space: pre-wrap;" class="text-left text-h6">
-                                    {{ CarouselText1 }}
-                                </div>
-                                <div style="opacity: 0.9; width: 30vw; white-space: pre-wrap;" class="text-left text-body1">
-                                    {{ CarouselSubText1 }}
-                                </div>
-                            </q-carousel-slide>
-                            <q-carousel-slide name="2" class="column no-wrap flex-center">
-                                <div style="width: 30vw; white-space: pre-wrap;" class="text-left text-h6">
-                                    {{ CarouselText2 }}
-                                </div>
-                                <div style="opacity: 0.9; width: 30vw; white-space: pre-wrap;" class="text-left text-body1">
-                                    {{ CarouselSubText2 }}
-                                </div>
-                            </q-carousel-slide>
-                            <q-carousel-slide name="3" class="column no-wrap flex-center">
-                                <div style="width: 30vw; white-space: pre-wrap;" class="text-left text-h6">
-                                    {{ CarouselText3 }}
-                                </div>
-                                <div style="opacity: 0.9; width: 30vw; white-space: pre-wrap;" class="text-left text-body1">
-                                    {{ CarouselSubText3 }}
-                                </div>
-                            </q-carousel-slide>
-                            <q-carousel-slide name="4" class="column no-wrap flex-center">
-                                <div style="width: 30vw; white-space: pre-wrap;" class="text-left text-h6">
-                                    {{ CarouselText4 }}
-                                </div>
-                                <div style="opacity: 0.9; width: 30vw; white-space: pre-wrap;" class="text-left text-body1">
-                                    {{ CarouselSubText4 }}
-                                </div>
-                            </q-carousel-slide>
-                        </q-carousel>
+                        
                         <q-space></q-space>
                         <q-carousel animated style="width: 28vw;" infinite :autoplay="thirdap" v-model="thirdslide" transition-next="fade" transition-prev="fade" control-color="white" arrows padding class="bg-transparent text-white">
                             <q-carousel-slide name="5" class="column no-wrap flex-center">
@@ -175,7 +142,7 @@
                         </q-carousel>
                     </q-card-section>
                 </q-card>
-            </div>
+            </div> -->
 
             <div class="absolute-bottom q-pa-xl">
                 <q-card flat style="width: auto; background: transparent;">
@@ -185,16 +152,16 @@
 
                         <img class="cursor-none brand-logo" src="/assets/branding/qbcore.svg"></img>
                         <q-space></q-space>
-                        <q-btn :ripple="false" flat size="xl" icon="downloading" color="white" @click="download = true"></q-btn>
+                        <!--<q-btn :ripple="false" flat size="xl" icon="downloading" color="white" @click="download = true"></q-btn>-->
                         <div class="loadingbar">
                             <div class="loadbar"><div class="thingy"></div></div>
                         </div>
-                        <q-btn icon="settings_suggest" color="bgbutton" @click="settings = true"></q-btn>
+                        <!--<q-btn icon="settings_suggest" color="bgbutton" @click="settings = true"></q-btn>-->
                     </q-card-section>
                 </q-card>
             </div>
 
-            <q-dialog no-shake v-model="download" position="bottom">
+            <!--<q-dialog no-shake v-model="download" position="bottom">
                 <q-card style="max-width: 400px; margin-left: 50vw; margin-bottom: 13vh;">
                     <q-card-section>
                         <div style="white-space: pre-wrap;" class="text-h6">
@@ -237,7 +204,7 @@
                         </div>
                     </q-card-section>
                 </q-card>
-            </q-dialog>
+            </q-dialog> -->
         </div>
     </body>
 </html>
